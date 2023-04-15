@@ -1,0 +1,18 @@
+include card-slide
+
+mixin product-slider(data, title='', sliderClass='', sectionClass='', sliderNavId='')
+    -var datahash= `slide` + i
+    section.products-slider(class=sectionClass)
+        .container-big
+            .reviews__content
+                .container
+                    h2.title.product-slider__title= title
+                .reviews__slider-wrapper
+                    .container
+                        .swiper(class=sliderClass)
+                            .swiper-wrapper
+                                each slide,i in data
+                                    +card(slide,i + 1)
+                            .reviews__slider-pagination(id=sliderNavId + '-pagination')
+                    .slider-button.slider-button_prev.btn-arrow.btn-arrow_left.mobile-hidden(id=sliderNavId + '-prev')
+                    .slider-button.slider-button_next.btn-arrow.btn-arrow_right.mobile-hidden(id=sliderNavId + '-next')

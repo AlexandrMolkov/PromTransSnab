@@ -1,0 +1,18 @@
+section.form-section(data-aos="fade-left" data-aos-duration="1000")
+    form.form(action="#")
+        .form__row
+            h2.form__title Уточните любую информацию, заказав обратный звонок
+        .form__row
+            .form__main
+                input.form__input(type="text" name="name" required placeholder="Ваше имя")
+                input.form__input(type="tel" name="phone" required placeholder="Ваш телефон")
+                input.form__input(type="email" name="mail" required placeholder="Ваша почта")
+        .form__row
+            label.form__label.form__agree
+                input.checkbox.hidden(type="checkbox" name='agree' required)
+                span.custom-checkbox.custom-checkbox_after
+                span.custom-checkbox-text Согласен с обработкой моих персональных данных в соответствии с 
+                    a.form__politic(href="#") политикой конфиденциальности
+            .form__submit-wrapper
+                button.btn.form__submit(type="submit") отправить
+        

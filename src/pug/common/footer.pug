@@ -1,0 +1,47 @@
+include mixins/nav
+
+footer.footer
+    .container
+        .footer__content
+            .footer__item
+                +nav(
+                    [
+                        {link:'catalog.html', content:'главная'},
+                        {link:'contacts.html', content:'каталог'},
+                        {link:'promo.html', content:'контакты'},
+                        {link:'catalog.html', content:'О нас'},
+                        {link:'help.html', content:'оптовикам'}
+                    ], 'footer-nav', currentPage)(class="footer__nav")
+
+            .footer__item
+                ul.footer__list
+                    li.footer__list-item
+                        a.footer__link(href="#") Щебень
+                    li.footer__list-item
+                        a.footer__link(href="#") Песок
+                    li.footer__list-item
+                        a.footer__link(href="#") Цемент
+                    li.footer__list-item
+                        a.footer__link(href="#") Уголь
+                    li.footer__list-item
+                        a.footer__link(href="#") Древесина
+                    li.footer__list-item
+                        a.footer__link(href="#") Пиломатериал
+
+            .footer__item.footer__item_flex-end
+                address.address
+                    .address__row
+                        .contact-location.contact-location_footer 101000, г. Москва, ул. Мясницкая 24/7, стр. 3, этаж 3, оф. 
+                    .address__row.address__row_flex-end
+                        a.contact-phone.contact-phone_footer(href="tel:799999999999") +7 999 999-99-99
+                    .address__row.address__row_flex-end
+                        .address__social
+                            a.address__soc-link.address__soc-link_icon-vk(href="#")
+                            a.address__soc-link.address__soc-link_icon-ok(href="#")
+                            a.address__soc-link.address__soc-link_icon-telegram(href="#")
+                button.btn заказать звонок
+
+
+
+
+

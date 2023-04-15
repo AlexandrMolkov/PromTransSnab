@@ -1,0 +1,24 @@
+extends pug/common/main
+
+block variables
+    -var title = 'Главная страница'
+    -var headerClasses = ''
+    -var currentPage = 'главная'
+
+block content
+    main.main
+        include pug/pages/index/hero
+        include pug/pages/index/products
+        include pug/pages/index/advantages
+        include pug/pages/index/promotion
+        include pug/pages/index/delivery
+        include pug/pages/index/wholesalers
+        include pug/pages/index/about
+        include pug/pages/index/reviews
+        include pug/pages/index/form-section
+        include pug/pages/index/contacts
+    include pug/common/footer
+    script(src="js/app.min.js")
+       
+
+        

@@ -1,0 +1,98 @@
+.wholesalers{
+    padding-top: 40px;
+
+    padding-bottom: 25px;
+
+    &__content{
+        display: flex;
+    flex-direction: column;
+    }
+
+    &__title{
+        margin-bottom: 27px;
+
+
+    }
+
+    &__subtitle{
+        font-weight: 800;
+        font-size: 22px;
+        line-height: 26px;
+        text-align: center;
+        letter-spacing: 0.05em;
+        text-transform: uppercase;   
+
+        margin-bottom: 47px;
+
+        @media (max-width: $tablet){
+            font-size: 18px;
+        }
+
+        @media (max-width: $mobileL){
+            font-size: 14px;
+        }
+
+    }
+
+    &__list{
+        max-width: 1080px;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+
+        margin-bottom: 47px;
+
+        @media (max-width: $tablet){
+            font-size: 18px;
+        }
+
+        @media (max-width: $mobileL){
+            font-size: 14px;
+        }
+
+        counter-reset: listcounter;
+        
+        > li{
+            display: inline-block;
+
+            
+            &:before {
+                counter-increment: listcounter;
+                content: counter(listcounter) ". ";
+            }
+        }
+
+
+    }
+
+    &__advantages{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        gap: 47px;
+
+        margin-bottom: 47px;
+
+        @media (max-width: 1200px){
+            justify-content: center;
+        }
+    }
+
+    &__btn{
+        max-width: 526px;
+        padding: 12px 30px;
+
+        margin: 0 auto;
+
+        @media (max-width: $tablet){
+            font-size: 18px;
+        }
+
+        @media (max-width: $mobileL){
+            font-size: 14px;
+        }
+
+    }
+}

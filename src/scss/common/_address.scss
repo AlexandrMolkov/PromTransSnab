@@ -1,0 +1,64 @@
+.address{
+    font-style: normal;
+    line-height: 150%;
+
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    
+    @media (max-width: 539px){
+        width: auto;
+        margin-left: auto;
+        flex-direction: column;
+    }
+
+    &__social{
+        display: flex;
+        gap: 12px;
+    }
+
+    &__soc-link{
+        font-size: 12px;
+        line-height: 150%;
+        display: block;
+
+        background-size: contain;
+        background-repeat: no-repeat;
+
+        &_icon-telegram,&_icon-watsapp,&_icon-viber{
+            width: 40px;
+            height: 40px;
+        }
+        &_icon-telegram{
+            background-image: url(../img/svg/social/telegram.svg);
+            width: 34px;
+            height: 28px;
+        }
+        &_icon-vk{
+            background-image: url(../img/svg/social/vk.svg);
+            width: 26px;
+            height: 26px;
+        }
+        &_icon-ok{
+            background-image: url(../img/svg/social/ok.svg);
+            width: 28px;
+            height: 28px;
+        }
+    }
+
+    &__row{
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 20px;
+
+        &_flex-end{
+            justify-content: flex-end;
+
+            @media (max-width: 539px){
+                justify-content: center;
+            }
+        }
+    }
+}

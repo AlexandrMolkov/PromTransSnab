@@ -1,0 +1,89 @@
+.reviews{
+
+    padding-bottom: 45px;
+
+    &__title{
+     margin-bottom: 20px;   
+    }
+}
+
+.review{
+
+    max-width: 440px;
+    margin: 0 auto;
+
+    padding: 43px 30px 30px;
+
+    border: 1px solid #D3D1CF;
+    border-radius: 10px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    &:hover{
+        background: linear-gradient(55.56deg, #EEEEEE -14.65%, rgba(238, 238, 238, 0) 107.56%);
+    }
+
+    @media (max-width: $laptop){
+        font-size: 15px;
+    }
+
+    &__avatar-wrapper{
+        border-radius: 50%;
+        overflow: hidden;
+        width: 132px;
+        height: 132px;
+
+        margin-bottom: 28px;
+
+        img{
+            width: 100%;
+            height: auto;
+        }
+    }
+
+    &__text{
+
+        margin-bottom: 35px;
+    }
+
+    &__bottom{
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    &__rating{
+        display: flex;
+        gap: 5px;
+    }
+
+    &__rating-start{
+        width: 30px;
+        height: 30px;
+
+        background-image: url('../img/svg/star.svg');
+        background-repeat: no-repeat;
+        background-size: contain;
+
+        @media (max-width: $laptop){
+            
+            width: 21px;
+            height: 21px;
+        }
+
+        &_empty{
+            background-image: url('../img/svg/star_empty.svg');
+        }
+    }
+
+    &__data{
+        color: #575757;
+
+        @media (max-width: $laptop){
+            font-size: 14px;
+        }
+    }
+}

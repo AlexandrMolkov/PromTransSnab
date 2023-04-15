@@ -1,0 +1,33 @@
+section.products
+    .container
+        .products__content
+            h2.products__title.visually-hidden наши товары
+
+            .product.product_big
+                picture
+                    source(srcset="img/materials.webp" type="image/webp")
+                    img.product__image(src="img/materials.png" alt="Пиломатериалы")
+                .product__text.product__text_start пиломатериалы
+            .product
+                picture
+                    source(srcset="img/coal.webp" type="image/webp")
+                    img.product__image(src="img/coal.png" alt="Уголь")
+                .product__text уголь
+            .product
+                picture
+                    source(srcset="img/macadam.webp" type="image/webp")
+                    img.product__image(src="img/macadam.png" alt="Щебень")
+                .product__text щебень
+            .product.product_laptop-col-6
+                picture
+                    source(srcset="img/sand.webp" type="image/webp")
+                    img.product__image(src="img/sand.png" alt="Песок")
+                .product__text
+                    p песок
+                    p.product__text-sm (карьерный, речной)
+            .product.product_laptop-col-6
+                picture
+                    source(srcset="img/cement.webp" type="image/webp")
+                    img.product__image(src="img/cement.png" alt="цемент")
+                .product__text цемент
+

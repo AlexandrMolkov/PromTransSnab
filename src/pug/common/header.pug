@@ -1,0 +1,65 @@
+header(class='header ' + headerClasses)#header
+    .blur
+    .header__content(data-aos="fade-in")
+        
+        .container
+            .header__top
+                .header__content-row
+                    .schedule 
+                        p работа склада с 8:00 до 20:00 
+                        p доставка 24/7
+                    address.address.address_header
+                        .address__row
+                            .contact-location 101000, г. Москва, ул. Мясницкая 24/7, стр. 3, этаж 3, оф. 322
+
+
+                    
+                    .header__buttons
+                        a.contact-phone(href="tel:79882892387") +7 988 289 2387
+                        button.btn-account Войти
+
+        .header__bottom
+            .container
+                .header__content-row
+                    
+                    +burg('#mobile-menu','burger', '')(class="header-burg")
+
+                    a.logo.logo_header(href="index.html")
+                        img.logo__image-main(src="img/logo/logo.svg" alt="лого" width="186" height="63")
+
+                    +nav(
+                        [
+                            {link:'promo.html', content:'главная'},
+                            {link:'catalog.html', content:'каталог'},
+                            {link:'help.html', content:'контакты'},
+                            {link:'404.html', content:'О нас'},
+                            {link:'contacts.html', content:'оптовикам'}
+                        ], 'headNav', currentPage)(class="header__nav")
+
+                    .cart-block
+                        a.cart-block__link(href="#")
+                            span.cart-block__quantity 2 
+                            
+                        .cart-block__amount товары:     
+                            span.cart-block__amount-value 250 000 р
+
+    .mobile-menu.header__mobile-menu#mobile-menu
+        .mobile-menu__wrapper
+            +nav(
+                [
+                    {link:'catalog.html', content:'главная'},
+                    {link:'contacts.html', content:'каталог'},
+                    {link:'promo.html', content:'контакты'},
+                    {link:'catalog.html', content:'О нас'},
+                    {link:'help.html', content:'оптовикам'}
+                ], 'mobile_nav', currentPage)(class="nav_mobile root-nav")
+
+            address.address
+                .address__row
+                    a.contact-phone(href="tel:79882892387") +7 988 289 2387
+                .address__row
+                    a.address__soc-link.address__soc-link_icon-telegram(href="#")
+                    a.address__soc-link.address__soc-link_icon-watsapp(href="#")
+                    a.address__soc-link.address__soc-link_icon-viber(href="#") 
+                .address__row
+                    .address__time Время работы: с 8:00 до 20:00 

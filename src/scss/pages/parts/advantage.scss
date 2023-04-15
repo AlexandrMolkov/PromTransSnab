@@ -1,0 +1,33 @@
+.advantage{
+
+
+    width: 326px;
+    border: 1px solid #D3D1CF;
+    border-radius: 10px;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    @media (max-width: $laptop){
+        width: 240px;
+    }
+
+
+    &__image{
+        max-height: 190px;   
+        margin-bottom: 20px;
+    }
+
+    &__text{
+        font-weight: 500;
+        font-size: 20.5175px;
+        line-height: 24px;
+        text-align: center;   
+
+        @media (max-width: $laptop){
+            font-size: 15px;
+        }
+    }
+}

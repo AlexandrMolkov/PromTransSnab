@@ -1,0 +1,87 @@
+.about{
+    padding-top: 25px;
+    padding-bottom: 50px;
+
+    &__title{
+      margin-bottom: 30px;   
+    }
+
+    &__subtitle{
+        font-weight: 500;
+        font-size: 20.5175px;
+        line-height: 24px;    
+        text-align: center;
+
+        margin-bottom: 30px;
+
+        @media (max-width: $tablet){
+            font-size: 15.3012px;
+            line-height: 18px;
+        }
+    }
+
+    &__main{
+        max-width: calc(50% - 30px);
+
+        margin-bottom: 50px;
+
+        @media (max-width: $laptop){
+
+            font-size: 16px;
+        }
+
+        @media (max-width: $tablet){
+            max-width: 100%;
+            text-align: center;
+        }
+
+        @media (max-width: $mobileL){
+            
+            font-size: 14px;
+        }
+
+        position: relative;
+
+        &::after {
+            content: "";
+            position: absolute;
+            top: 0;
+            right: calc(-100% - 60px);
+            width: 100%;
+            height: 100%;
+            background-image: url('/img/about.png');
+            background-repeat: no-repeat;
+            background-position: center;
+            border-radius: 10px;
+            overflow: hidden;
+
+            @media (max-width: $tablet){
+                max-width: 300px;
+                margin: 0 auto;
+                display: block;
+                position: relative;
+                right: 0;
+                margin-top: 30px;
+                height: 200px;
+                background-size: cover;
+            }
+        }
+
+        .webp & {
+            &::after {
+                background-image: url('/img/about.webp');
+            }
+        }
+
+    }
+
+    &__slider{
+
+
+
+        img {
+            width: 100%;
+            height: auto;
+        }
+    }
+}

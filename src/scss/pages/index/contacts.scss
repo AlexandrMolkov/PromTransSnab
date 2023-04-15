@@ -1,0 +1,228 @@
+.contacts{
+
+    padding-bottom: 116px;
+
+    &__content{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        gap: 20px;
+    }
+
+    &__title{
+        width: 100%;
+        margin-bottom: 50px;
+    }
+
+    &__main,
+    &__map,
+    &__requisites
+    ,&__info{
+        flex-basis: calc(50% - 20px);
+    }
+
+    &__requisites
+    ,&__info{
+
+        li{
+            list-style: disc;
+        }
+
+        @media (max-width: $laptop){
+            font-size: 16px;
+        }
+
+        @media (max-width: $tablet){
+            font-size: 14px;
+        }
+
+    } 
+    &__requisites{
+
+
+
+
+        @media (max-width: $tablet){
+            order: 3;
+        }
+
+        @media (max-width: 539px){
+            flex-basis: 385px;
+            margin: 0 auto;
+        }
+    }
+
+
+    &__info{
+        padding-left: 50px;
+
+        @media (max-width: $tablet){
+            order: 4;
+        }
+
+        @media (max-width: 539px){
+            margin: 0 auto;
+            flex-basis: 385px;
+        }
+
+    }
+    &__main{
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 28px;
+
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+
+        flex-shrink: 1;
+        flex-grow: 0;
+        max-width: 504px;
+
+        margin-bottom: 32px;
+
+        @media (max-width: $laptop){
+            font-size: 18px;
+            line-height: 21px;
+        }
+
+        @media (max-width: $tablet){
+            margin: 0 auto;
+            max-width: none;
+            font-size: 16px;
+            order: 2;
+            flex-basis: 100%;
+            flex-direction: row;
+            justify-content: space-between;
+            flex-wrap: wrap;
+
+            > * {
+               width: calc(50% - 30px) 
+            }
+        }
+
+        @media (max-width: 539px){
+            max-width: 385px;
+            > * {
+                width: 100% 
+             }
+        }
+        
+    }
+
+    &__map {
+        width: 50%;
+        
+        border: 1px solid rgba(39, 46, 40, 0.51);
+        border-radius: 10px;
+
+        background-image: url('/img/map.png');
+
+        .webp & {
+            background-image: url('/img/map.webp');
+        }
+
+        @media (max-width: $tablet){
+            width: 100%;
+            flex-basis: 385px;
+            height: 192px;
+            margin: 0 auto;
+
+            order: 1;
+        }
+    }
+
+    &__phone{
+
+        justify-content: start;
+
+        min-height: 24px;
+        padding-left: 50px;
+
+        &::before {
+            content: "";
+            width: 24px;
+            height: 24px;
+        }
+
+    }
+
+    &__delivery, &__schedule, &__requisites-title{
+        padding-left: 55px;
+        position: relative;
+
+        &::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 24px;
+            height: 24px;
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-position: center;
+        }
+    }
+
+    &__delivery{
+
+        &::before {
+            content: "";
+            background-image: url('../img/svg/celendar.svg');   
+        }
+    }
+    &__schedule{
+        &::before {
+            content: "";
+            background-image: url('../img/svg/warehouse_small.svg');   
+        }
+    }
+
+    &__location{
+
+        min-height: 24px;
+        padding-left: 55px;
+
+        &::before {
+            content: "";
+            width: 24px;
+            height: 24px;
+        }
+    }
+
+    &__requisites-title{
+
+        &::before {
+            content: "";
+            background-image: url('../img/svg/warehouse_small.svg');   
+        }
+
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 28px;
+
+        margin-bottom: 44px;
+
+        @media (max-width: $laptop){
+            font-size: 18px;
+            line-height: 21px;
+
+            margin-bottom: 32px;
+        }
+
+        @media (max-width: $tablet){
+            font-size: 16px;
+
+            margin-bottom: 21px;
+        }
+    }
+
+    &__requisites-list{
+        padding-left: 50px;
+
+        li{
+            list-style: disc;
+            line-height: 24px;
+        }
+    }
+}

@@ -1,0 +1,23 @@
+.advantages{
+
+    padding-bottom: 90px;
+
+    &__title{
+        
+        margin-bottom: 25px;
+    }
+
+
+
+
+    &__items{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 50px;
+        justify-content: center;
+    }
+
+
+
+
+}

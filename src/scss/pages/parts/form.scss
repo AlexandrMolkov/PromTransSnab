@@ -1,0 +1,348 @@
+.form-section{
+
+    padding-top: 50px;
+
+    padding-bottom: 70px;
+}
+
+.form{
+
+    padding: 45px;
+
+    border: 1px solid #DBDBDB;
+    box-shadow: 0px 24px 72px rgba(142, 192, 67, 0.37);
+    border-radius: 20px;
+
+    max-width: 1088px;
+    width: 100%;
+
+    margin: 0 auto;
+
+    display: flex;
+    flex-direction: column;
+
+    
+    @media (max-width: $tablet){
+        max-width: 580px;
+    }
+
+    &__title{
+        grid-column: span 8;   
+        font-weight: 500;
+        font-size: 23px;
+        line-height: 27px;
+        text-align: center;
+
+        margin-bottom: 26px;
+
+        @media (max-width: $laptop){
+            font-size: 18px;
+        }
+
+        @media (max-width: $tablet){
+            font-weight: 800;
+            text-transform: uppercase;
+        }
+
+        @media (max-width: $mobileL){
+            font-size: 16px;
+        }
+    }
+
+    
+    &__row{
+        display: grid;
+        grid-template-columns: repeat(8, 1fr);
+        gap: 20px;
+
+        &_mb_30{
+            margin-bottom: 30px;
+        }
+    }
+
+    &__flex-row{
+        display: flex;
+        justify-content: space-between;
+        gap: 30px;
+
+        &_wrap{
+            flex-wrap: wrap;
+
+            &-gap-5{
+                gap: 5px;
+            }
+        }
+        &_form-sec{
+            flex-wrap: wrap;
+
+            @media (max-width: $laptop){
+                flex-wrap: nowrap;
+            }
+
+            @media (max-width: 539px ){
+                flex-wrap: wrap;
+            }
+        }
+
+        &_code{
+            justify-content: center;
+            gap: 10px;
+            align-items: center;
+        }
+
+
+    }
+
+    &__main{
+        grid-column: span 4;
+        position: relative;
+
+        display: flex;
+        flex-wrap: wrap;
+        gap: 28px;
+
+
+        margin-bottom: 17px;
+
+
+        &::before {
+            content: "";
+            display: none;
+            position: absolute;
+            top: 0;
+            //left: 160%;
+            transform: translateX(-50%);
+            width: 303px;
+            height: 212px;
+
+            background-image: url('/img/svg/form.svg');
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: contain;
+
+            @media (max-width: $tablet){
+                display: block;
+                left: 50%;
+                position: relative;
+            }
+
+            @media (max-width: $mobileL){
+                width: 160px;
+                height: 110px;
+            }
+        }
+
+        
+        @media (max-width: $tablet){
+            grid-column: span 8;
+        }
+    }
+
+    &__bottom{
+        grid-column: span 8;
+
+        display: flex;
+    }
+
+    &__agree{
+        max-width: 480px;
+        align-items: center;
+
+        grid-column: span 4;
+
+        @media (max-width: $tablet){
+            grid-column: span 8;
+        }
+    }
+
+    &__submit-wrapper{
+        width: 100%;
+        max-width: 423px;
+        max-height: 48px;
+
+        margin-left: auto;
+
+        grid-column: span 4;
+
+        position: relative;
+
+        
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        @media (max-width: $tablet){
+            grid-column: span 8;
+
+            margin: 0 auto;
+        }
+
+        &::before {
+            content: "";
+            position: absolute;
+            top: -235px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 303px;
+            height: 212px;
+
+
+            background-image: url('/img/svg/form.svg');
+            background-repeat: no-repeat;
+            background-position: center;
+
+            @media (max-width: $tablet){
+                display: none;
+
+                
+            }
+        }
+    }
+
+    &__submit{
+        width: 303px;
+        margin: 0 auto;
+    }
+
+    &__item{
+        width: 100%;
+        &:not(:last-child){
+            margin-bottom: 50px;
+        }
+
+        @media (max-width: 690px){
+            max-width: 400px;
+            margin: 0 auto;
+        }
+    }
+
+
+    &__row-title{
+        font-weight: 700;
+        font-size: 25px;
+        line-height: 115%;
+        margin-bottom: 20px;
+        grid-column: span 8;
+
+        @media (max-width: $tablet){
+            font-size: 17px;
+            max-width: 50%;
+        }
+
+        @media (max-width: $mobileL){
+            
+        }
+
+        &_gcol_span_6{
+            grid-column: span 6;
+        }
+    }
+
+    &__politic{
+        text-decoration: underline;
+    }
+
+    &__label{
+
+        width: 100%;
+        min-width: 100px;
+        display: flex;
+        justify-content: flex-end;
+        gap: 10px;
+
+        &_sm{
+            grid-column: span 2;
+            @media (max-width: 690px){
+                grid-column: span 4;
+            }
+        }
+        &_tel{
+            grid-column: span 2;
+            @media (max-width: 690px){
+                grid-column: span 8;
+            }
+        }
+        &_md{
+            grid-column: span 3;
+            @media (max-width: 690px){
+                grid-column: span 8;
+            }
+        }
+        &_bg{
+            grid-column: span 5;
+            @media (max-width: 690px){
+                grid-column: span 8;
+            }
+        }
+
+    }
+
+    &__input, &__textarea{
+
+        font-weight: 300;
+        font-size: 17px;
+        line-height: 20px;
+
+        width: 100%;
+
+        border: 1px solid rgba(39, 46, 40, 0.53);
+        border-radius: 10px;
+
+        padding: 20px 26px;
+
+        font-family: Roboto;
+
+        outline-color: $accent;
+
+        @media (max-width: $laptop){
+            font-size: 14px;
+            padding: 16px 20px;
+        }
+
+
+        &::placeholder{
+            color: #272e2887;
+        }
+
+    }
+
+    &__textarea{
+        margin-right: 48px;
+        height: 150px;
+        resize: none;
+
+        @media (max-width: 539px){
+            margin-right: 0;
+        }
+    }
+
+    &__btn{
+
+        position: relative;
+
+        &_small{
+            width: 40px;
+            height: 40px;
+
+            
+            color: #fff;
+            font-weight: 400;
+            font-size: 17px;
+            line-height: 140%;
+            text-transform: uppercase;
+
+            background-color: $accent;
+
+            transition: background-color .3s;
+
+            &:hover{
+                cursor: pointer;
+                background-color: $accent;
+                color: #fff
+        
+            }
+        }
+    }
+
+
+}
