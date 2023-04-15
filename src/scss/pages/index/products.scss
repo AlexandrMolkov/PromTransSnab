@@ -55,7 +55,6 @@
 
     &:hover{
         cursor: pointer;
-        background-color: $accent;
 
         &::after{
            opacity: 1;
@@ -137,10 +136,6 @@
         grid-column: span 6;
         grid-row: span 2;
         max-height: 466px;
-
-        @media (max-width: 1200px){
-            //max-height: 345px;
-        }
 
         @media (max-width: $laptop){
             grid-column: span 8;

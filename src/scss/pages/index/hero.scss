@@ -2,9 +2,11 @@
 .hero{
     font-family: 'Montserrat', sans-serif;
 
-    position: relative;
-
     padding-bottom: 47px;
+    width: 100%;
+    overflow: hidden;
+
+    min-height: 700px;
 
     position: relative;
     &::before {
@@ -18,10 +20,11 @@
         background-color: $black;
     }
 
-    width: 100%;
-    overflow: hidden;
 
-    min-height: 700px;
+
+    @media (max-width: $tablet){
+        min-height: 448px;
+    }
 
     &__wrapper{
         margin: 0 auto;
@@ -51,8 +54,11 @@
     position: absolute;
     top: 0;
     left: 0;
-    width: auto;
     height: 100%; 
+    width: 100%;
+    object-fit: cover;
+    object-position: left;
+    height: 100%;
 }
 
 .slider-main{
@@ -62,7 +68,9 @@
     
     position: relative;
 
-
+    @media (max-width: $tablet){
+        min-height: 448px;
+    }
 
     &__slide-gradient{
 
@@ -107,6 +115,8 @@
         background-repeat: no-repeat;
         background-position-y: top;
         background-size: cover;
+
+        background-size: 0;
         
     }
 
