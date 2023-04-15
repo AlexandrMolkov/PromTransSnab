@@ -2882,7 +2882,7 @@ body.lock .main {
   left: 0;
   width: 24px;
   height: 20px;
-  background-image: url("/img/svg/warehouse_small.svg");
+  background-image: url("../img/svg/warehouse_small.svg");
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -3661,7 +3661,7 @@ body {
           transform: translateX(-50%);
   width: 303px;
   height: 212px;
-  background-image: url("/img/svg/form.svg");
+  background-image: url("../img/svg/form.svg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
@@ -3713,7 +3713,7 @@ body {
           transform: translateX(-50%);
   width: 303px;
   height: 212px;
-  background-image: url("/img/svg/form.svg");
+  background-image: url("../img/svg/form.svg");
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -3984,12 +3984,11 @@ body {
 
 .hero {
   font-family: "Montserrat", sans-serif;
-  position: relative;
   padding-bottom: 47px;
-  position: relative;
   width: 100%;
   overflow: hidden;
   min-height: 700px;
+  position: relative;
 }
 
 .hero::before {
@@ -4039,7 +4038,12 @@ body {
   position: absolute;
   top: 0;
   left: 0;
-  width: auto;
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: left;
+     object-position: left;
   height: 100%;
 }
 
@@ -4107,6 +4111,7 @@ body {
   background-repeat: no-repeat;
   background-position-y: top;
   background-size: cover;
+  background-size: 0;
 }
 
 .slider-main__image {
@@ -4272,7 +4277,6 @@ body {
 
 .product:hover {
   cursor: pointer;
-  background-color: #7FAD39;
 }
 
 .product:hover::after {
@@ -4637,7 +4641,7 @@ body {
   right: calc(-100% - 60px);
   width: 100%;
   height: 100%;
-  background-image: url("/img/about.png");
+  background-image: url("../img/about.png");
   background-repeat: no-repeat;
   background-position: center;
   border-radius: 10px;
@@ -4645,7 +4649,7 @@ body {
 }
 
 .webp .about__main::after {
-  background-image: url("/img/about.webp");
+  background-image: url("../img/about.webp");
 }
 
 .about__slider img {
@@ -4800,11 +4804,11 @@ body {
   width: 50%;
   border: 1px solid rgba(39, 46, 40, 0.51);
   border-radius: 10px;
-  background-image: url("/img/map.png");
+  background-image: url("../img/map.png");
 }
 
 .webp .contacts__map {
-  background-image: url("/img/map.webp");
+  background-image: url("../img/map.webp");
 }
 
 .contacts__phone {
@@ -4872,7 +4876,7 @@ body {
 
 .contacts__requisites-title::before {
   content: "";
-  background-image: url("../img/svg/warehouse_small.svg");
+  background-image: url("../img/svg/requisites.svg");
 }
 
 .contacts__requisites-list {
@@ -5196,6 +5200,14 @@ body {
   .form__row-title {
     font-size: 17px;
     max-width: 50%;
+  }
+
+  .hero {
+    min-height: 448px;
+  }
+
+  .slider-main {
+    min-height: 448px;
   }
 
   .slider-main__title {
