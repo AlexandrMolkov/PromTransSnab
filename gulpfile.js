@@ -143,7 +143,7 @@ const fonts = () => {
             })
             )
         )
-        .pipe(gulp.dest(`${BUILD_FOLDER}/fonts`))
+        //.pipe(gulp.dest(`${BUILD_FOLDER}/fonts`))
 
         .pipe(fonterFix({
 			formats: ['woff']

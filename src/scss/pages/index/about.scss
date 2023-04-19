@@ -49,7 +49,7 @@
             right: calc(-100% - 60px);
             width: 100%;
             height: 100%;
-            background-image: url('../img/about.png');
+            
             background-repeat: no-repeat;
             background-position: center;
             border-radius: 10px;
@@ -64,6 +64,12 @@
                 margin-top: 30px;
                 height: 200px;
                 background-size: cover;
+            }
+        }
+
+        .no-webp & {
+            &::after {
+                background-image: url('../img/about.png');
             }
         }
 
