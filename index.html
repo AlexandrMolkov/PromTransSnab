@@ -7,9 +7,6 @@
     <meta name="description" content="">
     <link rel="shortcut icon" href="img/logo/logo.svg" type="image/x-icon">
     <link rel="stylesheet" href="css/style.min.css">
-    <!--<link rel="preconnect" href="https://fonts.googleapis.com">-->
-    <!--//<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>-->
-    <!--<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;800&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">-->
     <title>Главная страница</title>
   </head>
   <body>
@@ -70,7 +67,7 @@
             </nav>
             <address class="address">
               <div class="address__row"><a class="contact-phone" href="tel:79882892387">+7 988 289 2387</a></div>
-              <div class="address__row"><a class="address__soc-link address__soc-link_icon-telegram" href="#"></a><a class="address__soc-link address__soc-link_icon-watsapp" href="#"></a><a class="address__soc-link address__soc-link_icon-viber" href="#"> </a></div>
+              <div class="address__row"><a class="social social_vk" href="#" aria-label="вконтакте"></a><a class="social social_ok" href="#" aria-label="однокласники"></a><a class="social social_tg" href="#" aria-label="телеграм"></a></div>
               <div class="address__row">
                 <div class="address__time">Время работы: с 8:00 до 20:00 </div>
               </div>
@@ -98,7 +95,7 @@
                         <div class="slider-main__contact"> 
                           <p>или связаться с нами через соц. сети</p>
                         </div>
-                        <div class="slider-main__social"><a class="social social_vk" href="#"></a><a class="social social_ok" href="#"></a><a class="social social_tg" href="#"></a></div>
+                        <div class="slider-main__social"><a class="social social_vk" href="#" aria-label="вконтакте"></a><a class="social social_ok" href="#" aria-label="однокласники"></a><a class="social social_tg" href="#" aria-label="телеграм"></a></div>
                       </div>
                     </div>
                   </div>
@@ -117,7 +114,7 @@
                         <div class="slider-main__contact"> 
                           <p>или связаться с нами через соц. сети</p>
                         </div>
-                        <div class="slider-main__social"><a class="social social_vk" href="#"></a><a class="social social_ok" href="#"></a><a class="social social_tg" href="#"></a></div>
+                        <div class="slider-main__social"><a class="social social_vk" href="#" aria-label="вконтакте"></a><a class="social social_ok" href="#" aria-label="однокласники"></a><a class="social social_tg" href="#" aria-label="телеграм"></a></div>
                       </div>
                     </div>
                   </div>
@@ -136,7 +133,7 @@
                         <div class="slider-main__contact"> 
                           <p>или связаться с нами через соц. сети</p>
                         </div>
-                        <div class="slider-main__social"><a class="social social_vk" href="#"></a><a class="social social_ok" href="#"></a><a class="social social_tg" href="#"></a></div>
+                        <div class="slider-main__social"><a class="social social_vk" href="#" aria-label="вконтакте"></a><a class="social social_ok" href="#" aria-label="однокласники"></a><a class="social social_tg" href="#" aria-label="телеграм"></a></div>
                       </div>
                     </div>
                   </div>
@@ -155,7 +152,7 @@
                         <div class="slider-main__contact"> 
                           <p>или связаться с нами через соц. сети</p>
                         </div>
-                        <div class="slider-main__social"><a class="social social_vk" href="#"></a><a class="social social_ok" href="#"></a><a class="social social_tg" href="#"></a></div>
+                        <div class="slider-main__social"><a class="social social_vk" href="#" aria-label="вконтакте"></a><a class="social social_ok" href="#" aria-label="однокласники"></a><a class="social social_tg" href="#" aria-label="телеграм"></a></div>
                       </div>
                     </div>
                   </div>
@@ -176,25 +173,25 @@
               <h2 class="products__title visually-hidden">наши товары</h2>
               <div class="product product_big">
                 <picture>
-                  <source srcset="img/materials.webp" type="image/webp"><img class="product__image" src="img/materials.png" alt="Пиломатериалы" width="579" height="466">
+                  <source class="lazyload" srcset="img/common/image.webp" data-src="img/materials.webp" type="image/webp"><img class="lazyload" src="img/common/image.png" data-src="img/materials.png" alt="Пиломатериалы" width="579" height="466">
                 </picture>
                 <div class="product__text product__text_start">пиломатериалы</div>
               </div>
               <div class="product">
                 <picture>
-                  <source srcset="img/coal.webp" type="image/webp"><img class="product__image" src="img/coal.png" alt="Уголь" width="280" height="222">
+                  <source class="lazyload" srcset="img/common/image.webp" data-src="img/coal.webp" type="image/webp"><img class="lazyload" src="img/common/image.png" data-src="img/coal.png" alt="Уголь" width="280" height="222">
                 </picture>
                 <div class="product__text">уголь</div>
               </div>
               <div class="product">
                 <picture>
-                  <source srcset="img/macadam.webp" type="image/webp"><img class="product__image" src="img/macadam.png" alt="Щебень" width="280" height="222">
+                  <source class="lazyload" srcset="img/common/image.webp" data-src="img/macadam.webp" type="image/webp"><img class="lazyload" src="img/common/image.png" data-src="img/macadam.png" alt="Щебень" width="280" height="222">
                 </picture>
                 <div class="product__text">щебень</div>
               </div>
               <div class="product product_laptop-col-6">
                 <picture>
-                  <source srcset="img/sand.webp" type="image/webp"><img class="product__image" src="img/sand.png" alt="Песок" width="280" height="222">
+                  <source class="lazyload" srcset="img/common/image.webp" data-src="img/sand.webp" type="image/webp"><img class="lazyload" src="img/common/image.png" data-src="img/sand.png" alt="Песок" width="280" height="222">
                 </picture>
                 <div class="product__text">
                   <p>песок</p>
@@ -203,7 +200,7 @@
               </div>
               <div class="product product_laptop-col-6">
                 <picture>
-                  <source srcset="img/cement.webp" type="image/webp"><img class="product__image" src="img/cement.png" alt="цемент" width="280" height="222">
+                  <source class="lazyload" srcset="img/common/image.webp" data-src="img/cement.webp" type="image/webp"><img class="lazyload" src="img/common/image.png" data-src="img/cement.png" alt="цемент" width="280" height="222">
                 </picture>
                 <div class="product__text">цемент</div>
               </div>
@@ -245,7 +242,7 @@
                   <div class="swiper-slide" data-hash="slide1">
                     <div class="promo-card">
                       <picture>
-                        <source srcset="img/promo_sand.webp" type="image/webp"><img class="promo-card__image" src="img/promo_sand.png" alt="карьерный песок" width="560" height="326">
+                        <source class="lazyload" srcset="img/common/image.webp" data-src="img/promo_sand.webp" type="image/webp"><img class="lazyload" src="img/common/image.png" data-src="img/promo_sand.png" alt="карьерный песок" width="560" height="326">
                       </picture>
                       <div class="promo-card__content">
                         <div class="promo-card__info">
@@ -260,7 +257,7 @@
                   <div class="swiper-slide" data-hash="slide2">
                     <div class="promo-card">
                       <picture>
-                        <source srcset="img/promo_sheben.webp" type="image/webp"><img class="promo-card__image" src="img/promo_sheben.png" alt="щебень" width="560" height="326">
+                        <source class="lazyload" srcset="img/common/image.webp" data-src="img/promo_sheben.webp" type="image/webp"><img class="lazyload" src="img/common/image.png" data-src="img/promo_sheben.png" alt="щебень" width="560" height="326">
                       </picture>
                       <div class="promo-card__content">
                         <div class="promo-card__info">
@@ -274,7 +271,7 @@
                   <div class="swiper-slide" data-hash="slide3">
                     <div class="promo-card">
                       <picture>
-                        <source srcset="img/promo_sand.webp" type="image/webp"><img class="promo-card__image" src="img/promo_sand.png" alt="карьерный песок">
+                        <source class="lazyload" srcset="img/common/image.webp" data-src="img/promo_sand.webp" type="image/webp"><img class="lazyload" src="img/common/image.png" data-src="img/promo_sand.png" alt="карьерный песок" width="560" height="326">
                       </picture>
                       <div class="promo-card__content">
                         <div class="promo-card__info">
@@ -289,7 +286,7 @@
                   <div class="swiper-slide" data-hash="slide4">
                     <div class="promo-card">
                       <picture>
-                        <source srcset="img/promo_sheben.webp" type="image/webp"><img class="promo-card__image" src="img/promo_sheben.png" alt="щебень">
+                        <source class="lazyload" srcset="img/common/image.webp" data-src="img/promo_sheben.webp" type="image/webp"><img class="lazyload" src="img/common/image.png" data-src="img/promo_sheben.png" alt="щебень" width="560" height="326">
                       </picture>
                       <div class="promo-card__content">
                         <div class="promo-card__info">
@@ -398,22 +395,22 @@
                 <div class="swiper-wrapper">
                   <div class="swiper-slide" data-hash="slide1">
                     <picture>
-                      <source srcset="img/photo_1.webp" type="image/webp"><img src="img/photo_1.png" alt="" width="1920" height="599">
+                      <source class="lazyload" srcset="img/common/image.webp" data-src="img/photo_1.webp" type="image/webp"><img class="lazyload" src="img/common/image.png" data-src="img/photo_1.png" alt="доски" width="1920" height="599">
                     </picture>
                   </div>
                   <div class="swiper-slide" data-hash="slide2">
                     <picture>
-                      <source srcset="img/photo_2.webp" type="image/webp"><img src="img/photo_2.png" alt="" width="1920" height="599">
+                      <source class="lazyload" srcset="img/common/image.webp" data-src="img/photo_2.webp" type="image/webp"><img class="lazyload" src="img/common/image.png" data-src="img/photo_2.png" alt="экскаватор и грузовик" width="1920" height="599">
                     </picture>
                   </div>
                   <div class="swiper-slide" data-hash="slide3">
                     <picture>
-                      <source srcset="img/photo_3.webp" type="image/webp"><img src="img/photo_3.png" alt="" width="1920" height="599">
+                      <source class="lazyload" srcset="img/common/image.webp" data-src="img/photo_3.webp" type="image/webp"><img class="lazyload" src="img/common/image.png" data-src="img/photo_3.png" alt="погрузчик" width="1920" height="599">
                     </picture>
                   </div>
                   <div class="swiper-slide" data-hash="slide4">
                     <picture>
-                      <source srcset="img/photo_1.webp" type="image/webp"><img src="img/photo_1.png" alt="" width="1920" height="599">
+                      <source class="lazyload" srcset="img/common/image.webp" data-src="img/photo_1.webp" type="image/webp"><img class="lazyload" src="img/common/image.png" data-src="img/photo_1.png" alt="доски" width="1920" height="599">
                     </picture>
                   </div>
                 </div>
@@ -606,7 +603,7 @@
                 </div>
                 <div class="address__row address__row_flex-end"><a class="contact-phone contact-phone_footer" href="tel:799999999999">+7 999 999-99-99</a></div>
                 <div class="address__row address__row_flex-end">
-                  <div class="address__social"><a class="address__soc-link address__soc-link_icon-vk" href="#"></a><a class="address__soc-link address__soc-link_icon-ok" href="#"></a><a class="address__soc-link address__soc-link_icon-telegram" href="#"></a></div>
+                  <div class="address__social"><a class="address__soc-link address__soc-link_icon-vk" href="#" aria-label="вконтакте"></a><a class="address__soc-link address__soc-link_icon-ok" href="#" aria-label="однокласники"></a><a class="address__soc-link address__soc-link_icon-telegram" href="#" aria-label="телеграм"></a></div>
                 </div>
               </address>
               <button class="btn">заказать звонок</button>
@@ -616,52 +613,6 @@
       </footer>
       <script src="js/app.min.js"></script>
     </div>
-    <div class="popup popup-account">
-      <div class="popup__inner account">
-        <button class="popup__close-btn"></button>
-        <div class="popup__title">Личный кабинет</div>
-        <div class="form popup__form">
-          <div class="form__flex-row">
-            <label class="form__label">Введите номер
-              <input class="form__input" type="tel" placeholder="+7 ХХХ ХХХ ХХ ХХ">
-            </label>
-          </div>
-          <div class="form__flex-row">
-            <button class="form__btn btn btn_orange" id="getcode">Получить код в SMS</button>
-          </div>
-          <div class="form__flex-row">
-            <label class="custom-checkbox-label form-cb">
-              <input class="checkbox hidden" type="checkbox" name="option1"/><span class="custom-checkbox custom-checkbox_after"></span><span class="custom-checkbox-text">При воходе или регистрации вы соглашаетесь с условиями предоставления сервиса</span>
-            </label>
-          </div>
-        </div>
-      </div>
-      <div class="popup__inner code">
-        <button class="popup__close-btn"></button>
-        <div class="popup__title popup__title_center">Введите код</div>
-        <div class="form popup__form">
-          <div class="form__flex-row form__flex-row_code">
-            <input class="form__input form__input_num" type="text">
-            <input class="form__input form__input_num" type="text">
-            <input class="form__input form__input_num" type="text">
-            <input class="form__input form__input_num" type="text">
-            <button class="form__btn form__btn_small">ok</button>
-          </div>
-          <div class="form__flex-row form__flex-row_wrap form__flex-row_wrap-gap-5">
-            <p>Вам потупит звонок на <b>+7 (999)529-00-01</b></p>
-            <p>Введите последние 4 цифры звонящего номера.</p>
-            <p>Получить новый код можно будет через 01:48</p>
-          </div>
-          <div class="form__flex-row">
-            <button class="form__btn btn-code">Не приходит код<span class="dec-line dec-line_button dec-line_square dec-line_square-small"></span></button>
-          </div>
-          <div class="form__flex-row">
-            <label class="custom-checkbox-label form-cb">
-              <input class="checkbox hidden" type="checkbox" name="option1"/><span class="custom-checkbox custom-checkbox_after"></span><span class="custom-checkbox-text">При воходе или регистрации вы соглашаетесь с условиями предоставления сервиса</span>
-            </label>
-          </div>
-        </div>
-      </div>
-    </div>
+    <!--include ../pages/parts/popup-->
   </body>
 </html>
