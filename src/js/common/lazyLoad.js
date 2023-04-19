@@ -3,7 +3,6 @@
 document.addEventListener('DOMContentLoaded', () => {
 
     const images = document.querySelectorAll('.lazyload')
-    
 
     const loadImg = (image) => {
         if(image.tagName === 'IMG'){
@@ -15,10 +14,11 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const checkCenter = () => {
         const screenBottom =  window.innerHeight + window.scrollY
+        
         images.forEach((e) => {
             
-            if(e.offsetTop <= screenBottom + 500) {
-                console.log(screenBottom)
+            //if(e.offsetTop <= screenBottom + 500) {
+            if(e.getBoundingClientRect().y < 1000) {
                 loadImg(e)
             }
         })
