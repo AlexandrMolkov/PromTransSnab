@@ -4452,6 +4452,11 @@ body {
   height: 100%;
 }
 
+.promo-card__image {
+  width: 100%;
+  height: auto;
+}
+
 .promo-card__info {
   margin-bottom: 48px;
 }
@@ -4561,6 +4566,9 @@ body {
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .delivery__item-image {
@@ -4849,6 +4857,7 @@ body {
   width: 50%;
   border: 1px solid rgba(39, 46, 40, 0.51);
   border-radius: 10px;
+  overflow: hidden;
 }
 
 .no-webp .contacts__map {
@@ -5356,6 +5365,10 @@ body {
     background-size: cover;
   }
 
+  .contacts__content {
+    gap: 30px;
+  }
+
   .contacts__requisites,
   .contacts__info {
     font-size: 14px;
@@ -5537,6 +5550,11 @@ body {
     -ms-grid-column-span: 1;
     grid-column: span 1;
     max-height: none;
+  }
+
+  .product__image {
+    width: 320px;
+    height: 240px;
   }
 
   .product_big {
