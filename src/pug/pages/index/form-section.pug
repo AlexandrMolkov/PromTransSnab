@@ -1,12 +1,12 @@
 section.form-section(data-aos="fade-left" data-aos-duration="1000")
-    form.form(action="#")
+    form.form#form(action="#" method="POST")
         .form__row
             h2.form__title Уточните любую информацию, заказав обратный звонок
         .form__row
             .form__main
-                input.form__input(type="text" name="name" required placeholder="Ваше имя")
+                input.form__input(type="text" name="name" required placeholder="Ваше имя" minlength="2" maxlength="25")
                 input.form__input(type="tel" name="phone" required placeholder="Ваш телефон")
-                input.form__input(type="email" name="mail" required placeholder="Ваша почта")
+                input.form__input(type="email" name="email" required placeholder="Ваша почта")
         .form__row
             label.form__label.form__agree
                 input.checkbox.hidden(type="checkbox" name='agree' required)

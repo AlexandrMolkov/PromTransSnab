@@ -53,6 +53,10 @@
        }
     }
 
+    &__image{
+        width: 100%;
+        height: auto;   
+    }
 
     &__info{
        margin-bottom: 48px; 
@@ -76,7 +80,7 @@
 
         @media (max-width: $mobileL){
             font-size: 16.5532px;
-line-height: 19px;
+            line-height: 19px;
         }
     }
 

@@ -7,6 +7,10 @@
         flex-wrap: wrap;
         justify-content: space-between;
         gap: 20px;
+
+        @media (max-width: $tablet){
+            gap: 30px;
+        }
     }
 
     &__title{
@@ -38,9 +42,6 @@
 
     } 
     &__requisites{
-
-
-
 
         @media (max-width: $tablet){
             order: 3;
@@ -116,6 +117,7 @@
         border: 1px solid rgba(39, 46, 40, 0.51);
         border-radius: 10px;
 
+        overflow: hidden;
 
 
         .no-webp & {

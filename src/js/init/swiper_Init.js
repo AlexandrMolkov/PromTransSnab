@@ -101,8 +101,8 @@ import Swiper, {Navigation,Pagination,EffectCoverflow,Autoplay, Parallax} from '
         speed: 300,
 
         navigation: {
-            nextEl: '.swiper-button-prev.review-next',
-            prevEl: '.swiper-button-prev.review-prev',
+            nextEl: '.review-next',
+            prevEl: '.review-prev',
         },
         pagination: {
             el: '.review-slider-pagination',

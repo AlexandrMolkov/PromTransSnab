@@ -109,7 +109,7 @@ const buildJS = ()=> {
         )
     )
     .pipe(webpack({
-        mode: 'development',
+        mode: 'production',
         devtool: 'source-map',
         output: {
             filename: 'app.min.js',
@@ -158,6 +158,8 @@ const fonts = () => {
 const mainTasks = gulp.parallel(html,scss,js,images,fonts)
 
 gulp.task('default', gulp.series(reset, mainTasks, gulp.parallel(watch, server)))
+gulp.task('build', gulp.series(reset, mainTasks))
+gulp.task('html', html)
 gulp.task('images', gulp.parallel(images))
 gulp.task('scripts', gulp.parallel(buildJS))
 gulp.task('fonts', gulp.parallel(fonts))

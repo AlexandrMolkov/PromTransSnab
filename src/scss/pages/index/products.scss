@@ -80,6 +80,10 @@
         width: 100%;
         height: auto;  
 
+        @media (max-width: 539px){
+            width: 320px;
+            height: 240px;
+        }
     }
 
     &__text{
